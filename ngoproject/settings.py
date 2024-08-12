@@ -124,9 +124,9 @@ STATICFILES_DIRS = [BASE_DIR / 'ngo/static/',]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'saathigroup29@gmail.com' 
-EMAIL_HOST_PASSWORD = 'ajse svfu dtfx oabn'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = Enter Your EMAIL_PORT
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER =  Enter your Email address
+# EMAIL_HOST_PASSWORD = Enter Your EMAIL HOST PASSWORD

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transparent Navbar</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add custom CSS for the transparent navbar -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+<style>
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.7); 
+      }
+     
+      .navbar-dark .navbar-nav .nav-link {
+        color: #ffffff; 
+      }
+      @media screen and (max-width: 768px) {
+         .btn{
+            margin-top:1rem;
+         }
+      }
+    
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid" style="z-index:2">
+      <a class="navbar-brand" href="#"><img class="rounded-circle" src="{% static 'images/logo.jpg' %}" style="width:3rem;height:3rem;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center:" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'team' %}">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn nav-link" href="{% url 'join' %}" style="background-color:#FFAC1C;border-radius:1REM;margin-left:1rem;"> Join Us </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn nav-link" href="{% url 'donate' %}" style="background-color:#FFAC1C;border-radius:1REM;margin-left:1rem;"> Donate Now </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Add Bootstrap JS and jQuery (if not already included) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+
+
+
+
+<div>
+    {% block content %}
+    {% endblock content %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Add Bootstrap JS and jQuery (if not already included) -->
+
+
+</body>
+</html>

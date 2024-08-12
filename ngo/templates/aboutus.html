@@ -1,0 +1,146 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    .image1 {
+        background-image: url("{% static 'images/pic1.png' %}");
+        background-size: cover;
+        background-position: center;
+        width:100%;
+        height: 20rem;;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity:0.8;
+    }
+    .col{
+        border:2px solid #FFAC1C;
+        margin:1rem;
+        border-radius:1rem;
+    }
+    .icons{
+        margin-top:1.5rem;
+    }
+    .icontext{
+        margin-top:1rem;
+        font-weight:bold;
+    }
+</style>
+<h1 class="image1" style="color:white;font-weight:bold;">About Us</h1></img>
+<div class="container" >
+    <div class="row" style="text-align:center;margin-top:2rem;">
+        <div class="col">
+            <i class="icons fa fa-handshake-o" style="color:#FFAC1C;font-size:36px"></i>
+            <p class="icontext">No Poverty</p>
+        </div>
+        <div class="col">
+            <i class="icons fa fa-book" style="color:#FFAC1C;font-size:36px"></i>
+            <p class="icontext">Education</p>
+        </div>
+        <div class="col">
+            <i class="icons fa fa-tint" style="color:#FFAC1C;font-size:36px"></i>
+            <p class="icontext">Clean Water</p>
+        </div>
+        <div class="col">
+            <i class="icons fa fa-heart-o" style="color:#FFAC1C;font-size:36px"></i>
+            <p class="icontext">Good Health</p>
+        </div>
+        <div class="col">
+            <i class="icons fas fa-hamburger" style="color:#FFAC1C;font-size:36px"></i>
+            <p class="icontext">Nutrition</p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="container my-5">
+        <div class="row" style="display:flex;text-align:center">
+            <!-- First Column with Rounded Image -->
+            <div class="col-md-6">
+                <img src="{% static 'images/educatio1.jpg' %}" alt="Image" class="img-fluid rounded-circle" style="height:25rem;width:25rem;">
+            </div>
+            <!-- Second Column with Text -->
+            <div class="col-md-6">
+                <h2>Education</h2>
+                <div className="card-details col" style="margin-top:1rem;">
+                    <p className="card-description">CARE India's 'Girl Education Program' (GEP) has
+                        been working for 25 years to ensure quality elementary education for children,
+                        especially girls and those from marginalized communities, to help them become the
+                        leaders and changemakers of the future. We see education as an imperative tool for
+                        girls to realize their maximum potential by gaining crucial skills and dispositions
+                        that set them on the path of social and economic empowerment.
+                        <br></br>
+                        Our girls education programmes and projects in India work through
+                        building learning ecosystems that are inclusive, gender conscious, and safe
+                        for all. We work with various stakeholders to champion the importance of girl child
+                        education and mobilize resources through online donations in India and other strategies.
+                        Our education initiatives work in accordance with the Right to Education Act (2009) and
+                        National Education Policy 2020.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+    <div class="row" style="display:flex;text-align:center">
+        <!-- First Column with Rounded Image -->
+        <!-- Second Column with Text -->
+        <div class="col-md-6 " style="margin-top:3.5rem;">
+            <h2>Food distribution</h2>
+            <div className="card-details col" style="margin-top:1rem;">
+                <p className="card-description">One in three children in low- and middle-income
+                    families suffers from chronic undernutrition. Without a sustainable source of
+                    income at a sufficient level, young children and their families do not have
+                    access to basic food. Therefore, to support people suffering from hunger and
+                    starvation across our country, CARF has initiated the idea to distribute food
+                    to needy people. Through the food distribution activities, our major goal is
+                    to eradicate hunger across our country. To reach our goals in serving to poor
+                    communities, we need the support from each one in the society in their best
+                    possible ways as it is very essential and such noble tasks can be executed well together.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/12.jpg' %}" alt="Image" class="img-fluid rounded-circle" style="height:25rem;width:25rem;">
+        </div>
+    </div>
+</div>
+<div class="container my-5">
+    <div class="row" style="display:flex;text-align:center">
+        <!-- First Column with Rounded Image -->
+        <div class="col-md-6">
+            <img src="{% static 'images/image7.png' %}" alt="Image" class="img-fluid rounded-circle" style="height:25rem;width:25rem;">
+        </div>
+        <!-- Second Column with Text -->
+        <div class="col-md-6" style="margin-top:3.5rem;">
+            <div className="text">
+                <h2>Planting</h2>
+                <div className="card-details col" style="margin-top:1rem;">
+                    <p className="card-description">They provide us with a variety of
+                        things to fulfil our daily requirements, including food to eat,
+                        air to breathe, clothes to cover our body, wood, medicine,
+                        shelter, and many products for human benefit. Plants are the
+                        primary producers, and all other living organisms on this planet depend on plants.
+                        <br>
+                        </br>
+                        
+                        are essential for human nutrition. Numerous plants and trees on
+                        this planet provide us with vegetables, fruits, seeds, species,
+                        essence, edible oils, beverages, and other food products.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div>
+    <img src="{% static 'images/image4.jpg' %}" alt="image" style="height:30rem;opacity:0.4;width:100%;">
+     <div style="text-align:center;">
+        <p style="font-size:3rem;font-weight:bold;margin-top:-20rem;text-align:center">The World Needs Smile Warriors</p>
+        <a href="{% url 'join' %}" ><button style="font-size:1.5rem;background-color:#FFAC1C;border-radius: 12px;color:black;text-align:center">Join Us</button></a>
+     </div>
+</div>
+{% endblock content %}

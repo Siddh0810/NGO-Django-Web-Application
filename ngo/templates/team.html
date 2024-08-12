@@ -1,0 +1,239 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .image1 {
+        background-image: url("{% static 'images/pic1.png' %}");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.8;
+    }
+
+    .row {
+        text-align: center;
+    }
+
+    .col-md-4 img {
+        border-radius: 1rem;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .col-md-6 img {
+        border-radius: 1rem;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .txt {
+        background-color: #f5f5f5;
+        color: black;
+        border-radius: 1rem;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .txt {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+</style>
+<h1 class="image1" style="color:white;font-weight:bold;">Volunteers</h1></img>
+
+<div class="container my-5">
+    <div class="row">
+        <!-- First Column -->
+        <div class="info col-md-4">
+            <img src="{% static 'teammembers/mishva.jpg' %}" alt="Image" class="img-fluid" >
+            <div class="row" style="width:70%;text-align:left;margin-left:4rem;margin-top:-3rem;">
+                <div style="background-color:#f5f5f5;color:black;border-radius:1rem;">
+                    <div style="margin-top:1rem">
+                   <p style="color:#FFAC1C;font-weight:bold;">Volunteer</p>
+                   <h3 style="text-align:left;margin-top:1rem;">Mishva Khamar</h3>
+                   <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Column -->
+        <div class="info col-md-4">
+            <img src="{% static 'teammembers/SIDDH2.jpg' %}" alt="Image" class="img-fluid" >
+            <div class="row" style="width:70%;text-align:left;margin-left:4rem;margin-top:-3rem;">
+                <div style="background-color:#f5f5f5;color:black;border-radius:1rem;">
+                    <div style="margin-top:1rem">
+                   <p style="color:#FFAC1C;font-weight:bold;">Volunteer</p>
+                   <h3 style="text-align:left;margin-top:1rem;">Siddh Shah</h3>
+                   <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="{% static "teammembers/diya.jpg" %}" alt="Image 3" class="img-fluid">
+            <div class="row" style="width:70%;text-align:left;margin-left:4rem;margin-top:-3rem;">
+                <div style="background-color:#f5f5f5;color:black;border-radius:1rem;">
+                    <div style="margin-top:1rem">
+                   <p style="color:#FFAC1C;font-weight:bold;">Volunteer</p>
+                   <h3 style="text-align:left;margin-top:1rem;">Diya Shah</h3>
+                   <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:2rem;">
+        <!-- First Column -->
+        <div class="info col-md-4">
+            <img src="{% static 'teammembers/jaini.jpg' %}" alt="Image" class="img-fluid" >
+            <div class="row" style="width:70%;text-align:left;margin-left:4rem;margin-top:-3rem;">
+                <div style="background-color:#f5f5f5;color:black;border-radius:1rem;">
+                    <div style="margin-top:1rem">
+                   <p style="color:#FFAC1C;font-weight:bold;">Volunteer</p>
+                   <h3 style="text-align:left;margin-top:1rem;">Jaini Purohit</h3>
+                   <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Column -->
+        <div class="info col-md-4">
+            <img src="{% static 'teammembers/jal.jpg' %}" alt="Image" class="img-fluid" >
+            <div class="row" style="width:70%;text-align:left;margin-left:4rem;margin-top:-3rem;">
+                <div style="background-color:#f5f5f5;color:black;border-radius:1rem;">
+                    <div style="margin-top:1rem">
+                   <p style="color:#FFAC1C;font-weight:bold;">Volunteer</p>
+                   <h3 style="text-align:left;margin-top:1rem;">Jal Shah</h3>
+                   <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="{% static "teammembers/jinay.jpg" %}" alt="Image 3" class="img-fluid">
+            <div class="row" style="width:70%;text-align:left;margin-left:4rem;margin-top:-3rem;">
+                <div style="background-color:#f5f5f5;color:black;border-radius:1rem;">
+                    <div style="margin-top:1rem">
+                   <p style="color:#FFAC1C;font-weight:bold;">Volunteer</p>
+                   <h3 style="text-align:left;margin-top:1rem;">Jinay Shah</h3>
+                   <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:2rem;">
+        <!-- First Column -->
+        <div class="info col-md-4">
+            <img src="{% static 'teammembers/krisha.jpg' %}" alt="Image" class="img-fluid" >
+            <div class="row" style="width:70%;text-align:left;margin-left:4rem;margin-top:-3rem;">
+                <div style="background-color:#f5f5f5;color:black;border-radius:1rem;">
+                    <div style="margin-top:1rem">
+                   <p style="color:#FFAC1C;font-weight:bold;">Volunteer</p>
+                   <h3 style="text-align:left;margin-top:1rem;">Krisha Khamar</h3>
+                   <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Column -->
+        <div class="info col-md-4">
+            <img src="{% static 'teammembers/palkhi.jpg' %}" alt="Image" class="img-fluid" >
+            <div class="row" style="width:70%;text-align:left;margin-left:4rem;margin-top:-3rem;">
+                <div style="background-color:#f5f5f5;color:black;border-radius:1rem;">
+                    <div style="margin-top:1rem">
+                   <p style="color:#FFAC1C;font-weight:bold;">Volunteer</p>
+                   <h3 style="text-align:left;margin-top:1rem;">Yashvi Palkhivala</h3>
+                   <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'teammembers/parth.jpg' %}" alt="Image"  class="img-fluid">
+            <div class="row" style="width:70%;text-align:left;margin-left:4rem;margin-top:-3rem;">
+                <div style="background-color:#f5f5f5;color:black;border-radius:1rem;">
+                    <div style="margin-top:1rem">
+                   <p style="color:#FFAC1C;font-weight:bold;">Volunteer</p>
+                   <h3 style="text-align:left;margin-top:1rem;">Parth Patel</h3>
+                   <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:2rem;">
+        <!-- First Column -->
+        <div class="info col-md-6">
+            <img src="{% static 'teammembers/siddh.jpg' %}" alt="Image" class="img-fluid" >
+            <div class="row" >
+                <div class="txt" style="width:17rem;background-color:#f5f5f5;color:black;border-radius:1rem;margin-top:-3rem;margin-left:12rem;text-align:left;">
+                    <div style="margin-top:1rem">
+                   <p style="color:#FFAC1C;font-weight:bold;">Volunteer</p>
+                   <h3 style="text-align:left;margin-top:1rem;">Siddh Shah</h3>
+                   <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Column -->
+        <div class="info col-md-6" style="margin-top:1rem;">
+            <img src="{% static 'teammembers/yesha1.jpg' %}" alt="Image" class="img-fluid">
+            <div class="img1 row" >
+                <div class="txt" style="width:17rem;background-color:#f5f5f5;color:black;border-radius:1rem;margin-top:-3rem;margin-left:12rem;text-align:left">
+                    <div style="margin-top:1rem;">
+                   <p style="color:#FFAC1C;font-weight:bold;">Volunteer</p>
+                   <h3 style="text-align:left;margin-top:1rem;">Yesha Shah</h3>
+                   <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <img src="{% static 'images/image4.jpg' %}" alt="image" style="height:30rem;opacity:0.4;width:100%;">
+     <div style="text-align:center;">
+        <p style="font-size:3rem;font-weight:bold;margin-top:-20rem;text-align:center">The World Needs Smile Warriors</p>
+        <a href="{% url 'join' %}" class="button-link" style="font-size:1.5rem;background-color:#FFAC1C;border-radius: 12px;color:black;text-align:center">Join Us</a>
+     </div>
+</div>
+
+{% endblock content %}

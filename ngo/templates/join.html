@@ -1,0 +1,124 @@
+
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Nunito:600,700,900" rel="stylesheet">
+
+ <style>
+
+
+    .back {
+        font-family: "Nunito";
+        background-image: url("{% static 'images/image4.jpg' %}"); 
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #login-card {
+        width: 500px;
+        border-radius: 25px;
+        margin: 120px auto;
+        background-color: #f5f5f5;
+        padding: 20px;
+        opacity: 0.8;
+      }
+      
+      #box {
+        border-radius: 30px;
+        background-color: transparent;
+        border-color: black;
+        color: black;
+        border: 2px solid black;
+      }
+      
+      #button {
+        border-radius: 30px;
+        border-color: #ffac1c;
+        background-color: #ffac1c;
+      }
+      
+      #btn {
+        position: absolute;
+        bottom: -35px;
+        padding: 5px;
+        margin: 0px 55px;
+        align-items: center;
+        border-radius: 5px;
+        /* background-color : #FFAC1C; */
+      }
+      #container {
+        margin-top: 25px;
+      }
+      
+      .btn-circle.btn-sm {
+        width: 40px;
+        height: 40px;
+        padding: 2px 0px;
+        border-radius: 25px;
+        font-size: 14px;
+        text-align: center;
+        margin: 8px;
+      }
+      
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+ </style>
+
+<div class="back">
+<div id="login-card" class="card">
+<div class="card-body">
+  <h2 class="text-center" style="color: black; font-size: larger; font-size: xx-large;">Donate for a Cause !!</h2>
+  <br>
+  <form method="POST">
+    {% csrf_token %}
+
+    <div class="form-group form-row">
+      <div class="col-sm-3"><label for="Name" style="color: black; font-size: large;">Name:</label></div>
+      <div class="col-sm-9"><input type="text" class="form-control" id="box" placeholder="Enter your name" name="Name"></div>
+    </div>
+
+    <div class="form-group form-row">
+      <div class="col-sm-3"><label for="mobile" style="color: black; font-size: large;">Mobile</label></div>
+      <div class="col-sm-9"><input type="tel" class="form-control" id="box" placeholder="Enter mobile number" name="mobile"></div>
+    </div>
+
+
+    <div class="form-group form-row">
+      <div class="col-sm-3"><label for="email" style="color: black; font-size: large;">Email:</label></div>
+      <div class="col-sm-9"><input type="email" class="form-control" id="box" placeholder="Enter email" name="email"></div>
+    </div>
+
+
+
+    <div class="form-group form-row">
+      <div class="col-sm-3"><label for="address" style="color: black; font-size: large;">Address:</label></div>
+      <div class="col-sm-9"><input type="text" class="form-control" id="box" placeholder="Enter your Address" name="address"></div>
+    </div>
+
+
+    <div class="form-group form-row">
+      <div class="col-sm-3"><label for="bday" style="color: black; font-size: large;">Birthdate:</label></div>
+      <div class="col-sm-9"><input type="date"  id="box" placeholder="Birthdate" name="bday"></div>
+    </div>
+
+
+    <button type="submit" id="button" class="btn btn-primary deep-purple btn-block ">Submit</button>
+<br>
+    <br>
+   
+  </form>
+</div>
+</div>
+    
+{% endblock content %}
